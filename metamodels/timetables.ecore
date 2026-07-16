@@ -6,11 +6,16 @@
         eType="#//Timetable" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="subjects" upperBound="-1"
         eType="#//Subject" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="degrees" upperBound="-1"
+        eType="#//Degree" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Degree">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Timetable">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="degree" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="semester" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="course" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="degree" eType="#//Degree"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="slots" upperBound="-1"
         eType="#//Slot" containment="true"/>
   </eClassifiers>
