@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<timetables:Timetables xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:timetables="timetables" xmi:id="tts">
+  <timetables xmi:id="tt1" degree="Computer Science" semester="2" course="1">
+    <slots xmi:id="slot1" start="10:00" duration="1" subject="subject1"/>
+    <slots xmi:id="slot2" start="11:00" duration="1" subject="subject2"/>
+  </timetables>
+  <subjects xmi:id="subject1" name="Programming I"/>
+  <subjects xmi:id="subject2" name="Databases"/>
+</timetables:Timetables>
