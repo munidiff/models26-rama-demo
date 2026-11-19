@@ -1,0 +1,4 @@
+{
+	"model_extensions": [".model"],
+	"metamodels": ["metamodels/timetables.ecore"]
+}
